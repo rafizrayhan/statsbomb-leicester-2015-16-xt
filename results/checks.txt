@@ -1,0 +1,23 @@
+1. Results: 380 of 380 scores rebuilt exactly from events.
+
+2. xT model sensitivity (Leicester rank of 20: xT per match / xT per pass or carry / open-play xG per unit of xT)
+   16 x 12, Premier League (main): 9 / 1 / 1
+   12 x 8, Premier League: 10 / 1 / 1
+   24 x 16, Premier League: 9 / 1 / 1
+   16 x 12, trained on 4 leagues (1,517 matches): 9 / 1 / 1
+   correlation of zone values, PL-only vs 4-league model: 0.998
+
+3. Speed threshold: Leicester's rank for open-play xG per match from shots within N seconds
+    5s: rank 1, Leicester 0.071, next best 0.059, median 0.027
+   10s: rank 1, Leicester 0.305, next best 0.213, median 0.108
+   15s: rank 1, Leicester 0.495, next best 0.345, median 0.201
+   20s: rank 1, Leicester 0.642, next best 0.460, median 0.288
+
+4. Game state: fast (10s) open-play xG per 90 minutes in each state
+   level   : Leicester 0.267 per 90 (1744 minutes), rank 1, median 0.099
+   leading : Leicester 0.358 per 90 (1318 minutes), rank 2, median 0.124
+   trailing: Leicester 0.263 per 90 (398 minutes), rank 1, median 0.074
+
+5. Match by match (fast open-play xG)
+   Leicester beat the league-median team average (0.11) in 26 of 38 matches
+   their best 3 matches gave 31% of the season's fast xG; without them, 0.228 per match (league median 0.108)
